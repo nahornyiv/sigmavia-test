@@ -1,0 +1,118 @@
+include pug/common/_head
+	block content
+			include pug/common/_header
+			main#main(role="main")
+				section.section-hero.jumbotron.bg-stretch
+					span(data-srcset="images/header_image.png, images/header_image@2x.png 2x")
+					.container
+						.text-content.text-center
+							.hero-logo
+								img(src="images/logo_sigmavia.png", width="" height="" alt="sigmavia")
+							.heading
+								h1.title Rethinking travel booking
+								p in terms of cross-device behaviour
+							.sub-heading
+								p Sigma Software took part in a challenge 
+								strong to create a clear and intuitive booking experience
+				section.section-work
+					.container
+						.heading.text-center
+							h2.title How we work
+							p To ensure throughout consideration and in-depth elaboration of the design project, we apply a proven 5 stage approach
+						.card-holder
+							.row
+								.col-sm-6.col-md-3
+									.card
+										.card-img
+											.img-inner
+												img(src="images/how_we_work_plane.png", srcset="images/how_we_work_plane@2x.png 2x" width="49" height="50" alt="image description")
+										strong.card-title Research & Exploration
+										.card-content
+											p Analysing interfaces for similar services to detect gaps. 
+								.col-sm-6.col-md-3
+									.card
+										.card-img
+											.img-inner
+												span.dot
+										strong.card-title design brainstorming
+										.card-content
+											p Devising possible solutions and design concepts.
+								.col-sm-6.col-md-3
+									.card
+										.card-img
+											.img-inner
+												span.dot
+										strong.card-title wireframing
+										.card-content
+											p Developing user experience in low-fidelity mockups. 
+								.col-sm-6.col-md-3
+									.card
+										.card-img
+											.img-inner
+												span.dot
+										strong.card-title mockuping
+										.card-content
+											p Detailed cross-device user interface interactions.
+				section.section-wiregrames(style="background-image: url('images/wiregrames-bg.jpg');")
+					.container
+						.heading
+							h2 Wireframing 
+							p Our UX designers depicted the screens and structure of the new system in a set of page layouts presenting all UI elements.
+						.row
+							ul.list-info
+								li
+									.img-holder
+										img(src="images/wireframes_1.png", width="255" height="145" alt="image description")
+								li
+									.img-holder
+										img(src="images/wireframes_2.png", width="255" height="145" alt="image description")
+								li
+									.img-holder
+										img(src="images/wireframes_4.png", width="255" height="145" alt="image description")
+								li
+									.img-holder
+										img(src="images/wireframes_3.png", width="255" height="145" alt="image description")
+								li
+									.img-holder
+										img(src="images/wireframes_5.png", width="255" height="145" alt="image description")
+								li
+									.img-holder
+										img(src="images/wireframes_6.png", width="255" height="145" alt="image description")
+								li
+									.img-holder
+										img(src="images/wireframes_7.png", width="255" height="145" alt="image description")
+				section.section-application
+					.container
+						.item
+							.row
+								.col-md-6
+									.text-holder
+										.text-block
+											h3 Intuitive  flight Search 
+											p Clean and simple flight search screen presents no distractions and complications to the user.
+										.img-block
+												img(src="images/mockups_filter_options.jpg", srcset="images/mockups_filter_options@2x.jpg 2x" alt="image decription")
+								.col-md-6
+									.text-img.text-img-fw
+											img(src="images/mockup_1.png", srcset="images/mockup_1@2x.png 2x" alt="image decription")
+						.item
+							.row
+								.col-md-4.order-md-1
+									.text-holder
+										.text-block
+											h3 Ticket info
+											p The all important information about tickets is presented in a structured and easily recognizable way.
+								.col-md-8.order-md-0
+									.text-img
+										img(src="images/tickets_info.png", srcset="images/tickets_info@2x.png 2x" alt="image decription")
+				.custom-pagination
+					.container
+						.d-flex.justify-content-between
+							a(href="#").arrow-btn
+								.icon-holder
+									img(src="images/arrow_back.png" srcset="images/arrow_back@2x.png 2x" alt="image description" width="42" hegiht="42")
+								span BACK TO PORTFOLIO
+							a(href="#").arrow-btn.arrow-btn-next
+								span Next Case
+								.icon-holder
+									img(src="images/arrow_back.png" srcset="images/arrow_back@2x.png 2x" alt="image description" width="42" hegiht="42")

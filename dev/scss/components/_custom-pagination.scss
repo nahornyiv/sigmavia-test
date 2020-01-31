@@ -1,0 +1,62 @@
+.custom-pagination {
+	padding: rem-calc(15) 0;
+
+	@include media('≥tablet') {
+		padding: rem-calc(36) 0;
+	}
+	
+	.container {
+		max-width: 97%;
+	}
+}
+
+.arrow-btn {
+	@include animate(opacity);
+	
+	display: flex;
+	align-items: center;
+	color: #193a4a;
+	font-weight: 700;
+	text-transform: uppercase;
+	max-width: 50%;
+
+	&:hover {
+		text-decoration: none;
+		color: #193a4a;
+		opacity: .8;
+	}
+
+	span {
+		font-size: rem-calc(14);
+
+		@include media('≥phone') {
+			font-size: rem-calc(18);
+		}
+	}
+
+	.icon-holder {
+		width: 30px;
+		height: 30px;
+
+		@include media('≥phone') {
+			width: 42px;
+			height: 42px;
+		}
+
+		+ span {
+			margin-left: rem-calc(14);
+		}
+	}
+
+	span {
+		+ .icon-holder {
+			margin-left: rem-calc(14);
+		}
+	}
+
+	&.arrow-btn-next {
+		.icon-holder {
+			transform: rotate(180deg);
+		}
+	}
+}

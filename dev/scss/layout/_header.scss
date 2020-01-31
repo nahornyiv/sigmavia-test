@@ -1,0 +1,36 @@
+.header {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 10;
+	transform: translate3d(0, 0, 0);
+
+	.container {
+		max-width: 90%;
+
+		@include media('≥phone') {
+			max-width: 97%;
+		}
+	}
+
+	.navbar {
+		padding: rem-calc(15) 0;
+
+		@include media('≥phone') {
+			padding: rem-calc(30) 0;
+		}
+	}
+
+	.navbar-brand {
+		width: 115px;
+
+		@include media('≥phone') {
+			width: 131px;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+}
