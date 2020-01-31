@@ -32,3 +32,8 @@ a[href^=skype]{
 body {
 	color: #102c3a;
 }
+
+*::selection {
+	background-color: $red; 
+	color: $white;
+}
